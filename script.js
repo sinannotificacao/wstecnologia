@@ -1,16 +1,6 @@
 
 const menuToggle = document.getElementById('menuToggle');
 const mobileMenu = document.getElementById('mobileMenu');
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.15 });
-
-document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 
 if (menuToggle && mobileMenu) {
   menuToggle.addEventListener('click', () => {
@@ -21,3 +11,14 @@ if (menuToggle && mobileMenu) {
     link.addEventListener('click', () => mobileMenu.classList.remove('open'));
   });
 }
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.14 });
+
+document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
