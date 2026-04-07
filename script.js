@@ -23,3 +23,18 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.reveal').forEach((element) => {
   observer.observe(element);
 });
+
+
+const topbar = document.getElementById('topbar');
+
+function handleTopbarScroll() {
+  if (!topbar) return;
+  if (window.scrollY > 24) {
+    topbar.classList.add('scrolled');
+  } else {
+    topbar.classList.remove('scrolled');
+  }
+}
+
+window.addEventListener('scroll', handleTopbarScroll, { passive: true });
+handleTopbarScroll();
