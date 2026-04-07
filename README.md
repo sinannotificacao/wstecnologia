@@ -1,18 +1,19 @@
-# WS Tecnologia e Informática
+# WS TEC
 
-Landing page em HTML, CSS e JavaScript pronta para GitHub Pages ou hospedagem comum.
+Site em HTML, CSS e JavaScript.
 
-## Arquivos principais
+## Arquivos
 - index.html
 - styles.css
 - script.js
 
-## Pasta de imagens
-- img/logo.jpeg
-- img/hero-tech.svg
+## Imagens
+- img/logo-atual.jpeg
+- img/conceito-wstec.png
 - img/pc-gamer.jpg
 - img/notebook-trabalho.jpg
 - img/notebook-gamer.jpg
 
-## WhatsApp
-- 37 9 9178-7777
+## Observação
+A imagem `conceito-wstec.png` foi usada como referência visual principal.
+A logo definitiva pode ser trocada depois sem mudar a estrutura do site.

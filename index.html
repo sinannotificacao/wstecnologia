@@ -1,70 +1,216 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WS Tecnologia e Informática</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WS TEC | Assistência Técnica em Computadores e Notebooks</title>
+  <meta name="description" content="Manutenção, upgrade e vendas de computadores e notebooks. Atendimento rápido via WhatsApp." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="bg-grid"></div>
+  <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div>
 
-<header class="topbar">
-  <img src="img/logo.jpeg" class="logo">
-  <nav>
+  <header class="topbar" id="topbar">
+    <a href="#inicio" class="brand">
+      <img src="img/logo-atual.jpeg" alt="WS Tecnologia e Informática" />
+    </a>
+
+    <nav class="menu">
+      <a href="#servicos">Serviços</a>
+      <a href="#problemas">Problemas</a>
+      <a href="#equipamentos">Equipamentos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <a class="button button-outline desktop-cta" href="https://wa.me/5537991787777?text=Olá%2C%20quero%20um%20orçamento." target="_blank" rel="noopener noreferrer">
+      Falar agora
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
     <a href="#servicos">Serviços</a>
     <a href="#problemas">Problemas</a>
+    <a href="#equipamentos">Equipamentos</a>
     <a href="#contato">Contato</a>
-  </nav>
-  <a class="btn" href="https://wa.me/5537991787777">WhatsApp</a>
-</header>
-
-<section class="hero">
-  <h1>Seu computador está lento?<br>A gente resolve.</h1>
-  <p>Manutenção, upgrade e venda de computadores e notebooks com atendimento rápido e confiança.</p>
-  <a class="btn" href="https://wa.me/5537991787777">Falar agora</a>
-</section>
-
-<section id="problemas" class="section">
-  <h2>Problemas que resolvemos</h2>
-  <ul>
-    <li>Computador lento</li>
-    <li>Travando ou desligando</li>
-    <li>Demora para ligar</li>
-    <li>Notebook esquentando</li>
-  </ul>
-</section>
-
-<section id="servicos" class="section">
-  <h2>Serviços</h2>
-  <div class="grid">
-    <div class="card">
-      <img src="img/pc-gamer.jpg">
-      <h3>Montagem PC Gamer</h3>
-    </div>
-    <div class="card">
-      <img src="img/notebook-trabalho.jpg">
-      <h3>Notebook Trabalho</h3>
-    </div>
-    <div class="card">
-      <img src="img/notebook-gamer.jpg">
-      <h3>Notebook Gamer</h3>
-    </div>
+    <a class="button" href="https://wa.me/5537991787777?text=Olá%2C%20quero%20um%20orçamento." target="_blank" rel="noopener noreferrer">Falar agora</a>
   </div>
-</section>
 
-<section class="section">
-  <h2>Por que escolher</h2>
-  <ul>
-    <li>Atendimento rápido</li>
-    <li>Orçamento sem compromisso</li>
-    <li>Preço justo</li>
-  </ul>
-</section>
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">WS TEC</span>
+        <h1>Seu computador está lento?<br><span>A gente resolve.</span></h1>
+        <p>
+          Manutenção, upgrade e vendas de computadores e notebooks com atendimento rápido,
+          linguagem simples e foco em desempenho.
+        </p>
 
-<section id="contato" class="section">
-  <h2>Fale agora</h2>
-  <a class="btn big" href="https://wa.me/5537991787777">Chamar no WhatsApp</a>
-</section>
+        <div class="pain-points">
+          <div>✔ Travando direto?</div>
+          <div>✔ Demorando pra ligar?</div>
+          <div>✔ Esquentando muito?</div>
+          <div>✔ Precisando de upgrade?</div>
+        </div>
 
+        <div class="hero-actions">
+          <a class="button" href="https://wa.me/5537991787777?text=Olá%2C%20vim%20pelo%20site%20e%20quero%20atendimento." target="_blank" rel="noopener noreferrer">Chamar no WhatsApp</a>
+          <a class="button button-outline" href="#servicos">Ver serviços</a>
+        </div>
+
+        <p class="hero-note">Atendimento rápido, direto no WhatsApp.</p>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="hero-card">
+          <img src="img/conceito-wstec.png" alt="Conceito visual WS TEC" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="servicos">
+      <div class="section-heading">
+        <span class="eyebrow">Serviços</span>
+        <h2>Assistência técnica e soluções para quem quer desempenho de verdade.</h2>
+        <p>Atendimento para uso pessoal, trabalho, estudo e gamer.</p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="card">
+          <div class="icon">⚡</div>
+          <h3>Formatação e instalação</h3>
+          <p>Sistema limpo, drivers e programas essenciais instalados do jeito certo.</p>
+        </article>
+        <article class="card">
+          <div class="icon">💾</div>
+          <h3>Upgrade de SSD e memória</h3>
+          <p>Mais velocidade para abrir programas, ligar rápido e trabalhar melhor.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🎮</div>
+          <h3>Montagem de PC gamer</h3>
+          <p>Configuração equilibrada, visual bonito e desempenho forte.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🔧</div>
+          <h3>Reparo em notebook</h3>
+          <p>Diagnóstico, troca de peças e solução prática para o dia a dia.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🧰</div>
+          <h3>Manutenção preventiva</h3>
+          <p>Limpeza, revisão e prevenção contra aquecimento e travamentos.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🛒</div>
+          <h3>Vendas e consultoria</h3>
+          <p>Ajuda para escolher computador, notebook e peças sem gastar errado.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal" id="problemas">
+      <div class="section-heading">
+        <span class="eyebrow">Problemas comuns</span>
+        <h2>Se o seu equipamento está assim, já é hora de resolver.</h2>
+      </div>
+
+      <div class="problem-grid">
+        <div class="problem-item">Computador lento</div>
+        <div class="problem-item">Travando ao abrir programas</div>
+        <div class="problem-item">Notebook esquentando demais</div>
+        <div class="problem-item">Sistema demorando para ligar</div>
+        <div class="problem-item">Pouco espaço e pouca memória</div>
+        <div class="problem-item">Queda de desempenho em jogos e trabalho</div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="equipamentos">
+      <div class="section-heading">
+        <span class="eyebrow">Equipamentos</span>
+        <h2>Trabalho, estudo e gamer.</h2>
+        <p>Imagens reais para mostrar os tipos de equipamentos que você atende.</p>
+      </div>
+
+      <div class="equipment-grid">
+        <article class="equipment-card large">
+          <img src="img/pc-gamer.jpg" alt="PC gamer" />
+          <div class="equipment-copy">
+            <h3>PC Gamer</h3>
+            <p>Montagem, upgrade, limpeza e otimização para desempenho forte.</p>
+          </div>
+        </article>
+        <article class="equipment-card">
+          <img src="img/notebook-trabalho.jpg" alt="Notebook para trabalho" />
+          <div class="equipment-copy">
+            <h3>Notebook para trabalho</h3>
+            <p>Mais rapidez, estabilidade e produtividade no dia a dia.</p>
+          </div>
+        </article>
+        <article class="equipment-card">
+          <img src="img/notebook-gamer.jpg" alt="Notebook gamer" />
+          <div class="equipment-copy">
+            <h3>Notebook gamer</h3>
+            <p>Melhorias para quem precisa de potência e visual moderno.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="premium-box">
+        <div>
+          <span class="eyebrow">Por que escolher a WS TEC</span>
+          <h2>Atendimento rápido, preço justo e serviço de confiança.</h2>
+          <p>O cliente quer resolver o problema sem enrolação. Por isso, o foco do site é ser direto e levar ao WhatsApp.</p>
+        </div>
+
+        <div class="metric-grid">
+          <div class="metric-card">
+            <strong>01</strong>
+            <span>Resposta rápida</span>
+          </div>
+          <div class="metric-card">
+            <strong>02</strong>
+            <span>Orçamento sem compromisso</span>
+          </div>
+          <div class="metric-card">
+            <strong>03</strong>
+            <span>Suporte para PC e notebook</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="contato">
+      <div class="cta-box">
+        <span class="eyebrow">Contato</span>
+        <h2>Quer melhorar seu computador ou notebook?</h2>
+        <p>Chame agora no WhatsApp para pedir orçamento de manutenção, upgrade, montagem ou compra.</p>
+        <div class="hero-actions">
+          <a class="button" href="https://wa.me/5537991787777?text=Olá%2C%20quero%20atendimento%20da%20WS%20TEC." target="_blank" rel="noopener noreferrer">Falar agora</a>
+          <a class="button button-outline" href="tel:+5537991787777">(37) 9 9178-7777</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a class="whatsapp-float" href="https://wa.me/5537991787777?text=Olá%2C%20vim%20pelo%20site%20da%20WS%20TEC." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+
+  <footer class="footer">
+    <div>
+      <strong>WS TEC</strong>
+      <p>Manutenção, upgrade e vendas de computadores e notebooks.</p>
+    </div>
+    <a href="#inicio">Voltar ao topo ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
