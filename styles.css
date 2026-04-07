@@ -160,7 +160,12 @@ a { color: inherit; text-decoration: none; }
   border-radius: 26px; overflow: hidden;
 }
 .equipment-card img {
-  width: 100%; display: block; background: #071020;
+  width: 100%;
+  height: 260px;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  background: #071020;
 }
 .equipment-copy { padding: 22px; }
 .equipment-card.large .equipment-copy { padding: 24px; }
