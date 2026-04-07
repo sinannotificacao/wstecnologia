@@ -1,4 +1,4 @@
-# WS TEC - estilo conceito
+# WS TEC - site completo ajustado
 
 Arquivos:
 - index.html
