@@ -1,261 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WS Tecnologia e Informática</title>
-  <meta name="description" content="Vendas, manutenção e suporte para computadores e notebooks. Upgrade, montagem de PC gamer, limpeza técnica e atendimento rápido via WhatsApp." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WS Tecnologia e Informática</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="bg-grid"></div>
-  <div class="bg-glow bg-glow-1"></div>
-  <div class="bg-glow bg-glow-2"></div>
 
-  <header class="topbar" id="topbar">
-    <div class="menu-shine"></div>
-    <a href="#inicio" class="brand">
-      <img src="img/logo.jpeg" alt="WS Tecnologia e Informática" />
-    </a>
-
-    <nav class="menu">
-      <a href="#servicos">Serviços</a>
-      <a href="#equipamentos">Equipamentos</a>
-      <a href="#diferenciais">Diferenciais</a>
-      <a href="#contato">Contato</a>
-    </nav>
-
-    <a class="button button-outline topbar-cta" href="https://wa.me/5537991787777?text=Olá%2C%20vim%20pelo%20site%20e%20quero%20um%20orçamento." target="_blank" rel="noopener noreferrer">
-      WhatsApp
-    </a>
-
-    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
-  </header>
-
-  <div class="mobile-menu" id="mobileMenu">
+<header class="topbar">
+  <img src="img/logo.jpeg" class="logo">
+  <nav>
     <a href="#servicos">Serviços</a>
-    <a href="#equipamentos">Equipamentos</a>
-    <a href="#diferenciais">Diferenciais</a>
+    <a href="#problemas">Problemas</a>
     <a href="#contato">Contato</a>
-    <a class="button" href="https://wa.me/5537991787777?text=Olá%2C%20vim%20pelo%20site%20e%20quero%20um%20orçamento." target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
-  </div>
+  </nav>
+  <a class="btn" href="https://wa.me/5537991787777">WhatsApp</a>
+</header>
 
-  <main>
-    <section class="hero section" id="inicio">
-      <div class="hero-content reveal">
-        <div class="hero-badge-row">
-          <span class="hero-badge">Atendimento rápido</span>
-          <span class="hero-badge">Visual premium</span>
-          <span class="hero-badge">WhatsApp direto</span>
-        </div>
-        <span class="eyebrow">WS Tecnologia e Informática</span>
-        <h1>Manutenção, upgrades e vendas com visual forte e presença profissional.</h1>
-        <p>
-          Assistência técnica para computadores e notebooks, upgrades que aceleram o desempenho
-          e soluções pensadas para quem trabalha, estuda ou joga.
-        </p>
+<section class="hero">
+  <h1>Seu computador está lento?<br>A gente resolve.</h1>
+  <p>Manutenção, upgrade e venda de computadores e notebooks com atendimento rápido e confiança.</p>
+  <a class="btn" href="https://wa.me/5537991787777">Falar agora</a>
+</section>
 
-        <div class="hero-actions">
-          <a class="button button-dark" href="#diferenciais">Por que escolher a WS</a>
-          <a class="button" href="https://wa.me/5537991787777?text=Olá%2C%20quero%20um%20orçamento%20para%20computador%20ou%20notebook." target="_blank" rel="noopener noreferrer">Solicitar orçamento</a>
-          <a class="button button-outline" href="#equipamentos">Ver equipamentos</a>
-        </div>
+<section id="problemas" class="section">
+  <h2>Problemas que resolvemos</h2>
+  <ul>
+    <li>Computador lento</li>
+    <li>Travando ou desligando</li>
+    <li>Demora para ligar</li>
+    <li>Notebook esquentando</li>
+  </ul>
+</section>
 
-        <div class="hero-stats">
-          <div class="stat-card">
-            <strong>Atendimento rápido</strong>
-            <span>Suporte direto no WhatsApp</span>
-          </div>
-          <div class="stat-card">
-            <strong>PC e notebook</strong>
-            <span>Trabalho, estudo e gamer</span>
-          </div>
-          <div class="stat-card">
-            <strong>Visual premium</strong>
-            <span>Site com presença e impacto</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="hero-visual reveal">
-        <div class="hero-image-wrap">
-          <img src="img/hero-tech.svg" alt="Ilustração tecnológica com computador gamer e notebook" class="hero-image" />
-        </div>
-      </div>
-    </section>
-
-    <section class="brands section reveal" aria-label="Tecnologias atendidas">
-      <div class="brands-track">
-        <span>Windows</span>
-        <span>SSD NVMe</span>
-        <span>PC Gamer</span>
-        <span>Notebook</span>
-        <span>Formatação</span>
-        <span>Upgrade</span>
-        <span>Limpeza Técnica</span>
-        <span>Backup</span>
-        <span>Hardware</span>
-        <span>Desempenho</span>
-      </div>
-    </section>
-
-    <section class="section reveal" id="servicos">
-      <div class="section-heading">
-        <span class="eyebrow">Serviços</span>
-        <h2>Soluções para deixar o equipamento mais rápido, bonito e confiável.</h2>
-        <p>Atendimento pensado para produtividade, home office, estudo e jogos.</p>
-      </div>
-
-      <div class="cards-grid">
-        <article class="service-card">
-          <div class="icon">⚡</div>
-          <h3>Formatação e instalação</h3>
-          <p>Instalação do sistema, drivers, programas essenciais e configuração inicial do computador.</p>
-        </article>
-
-        <article class="service-card">
-          <div class="icon">💾</div>
-          <h3>Upgrade de SSD e memória</h3>
-          <p>Mais velocidade para ligar, abrir programas, trabalhar melhor e jogar com mais fluidez.</p>
-        </article>
-
-        <article class="service-card">
-          <div class="icon">🧰</div>
-          <h3>Manutenção preventiva</h3>
-          <p>Limpeza interna, revisão, troca de pasta térmica e prevenção contra travamentos e aquecimento.</p>
-        </article>
-
-        <article class="service-card">
-          <div class="icon">🎮</div>
-          <h3>Montagem de PC gamer</h3>
-          <p>Configuração equilibrada, bom desempenho e visual impactante para quem quer montar do jeito certo.</p>
-        </article>
-
-        <article class="service-card">
-          <div class="icon">🔧</div>
-          <h3>Reparo em notebooks</h3>
-          <p>Diagnóstico técnico, substituição de peças e melhorias para notebook de trabalho ou uso pessoal.</p>
-        </article>
-
-        <article class="service-card">
-          <div class="icon">🛒</div>
-          <h3>Vendas e consultoria</h3>
-          <p>Orientação para escolher computador, notebook, acessórios e peças conforme sua real necessidade.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section reveal" id="equipamentos">
-      <div class="section-heading">
-        <span class="eyebrow">Equipamentos</span>
-        <h2>Imagens no estilo certo para mostrar o tipo de solução que você entrega.</h2>
-        <p>Sem bancada técnica por enquanto. Aqui o foco fica em computador gamer e notebooks para trabalho e uso gamer.</p>
-      </div>
-
-      <div class="equipment-grid">
-        <article class="equipment-card large">
-          <img src="img/pc-gamer.jpg" alt="PC gamer estilizado em azul" />
-          <div class="equipment-copy">
-            <h3>PC gamer com presença forte</h3>
-            <p>Ideal para destacar montagem, upgrades, performance e estética profissional no site.</p>
-          </div>
-        </article>
-
-        <article class="equipment-card">
-          <img src="img/notebook-trabalho.jpg" alt="Notebook para trabalho estilizado em azul" />
-          <div class="equipment-copy">
-            <h3>Notebook para trabalho</h3>
-            <p>Perfeito para comunicar manutenção, otimização e upgrades para produtividade.</p>
-          </div>
-        </article>
-
-        <article class="equipment-card">
-          <img src="img/notebook-gamer.jpg" alt="Notebook gamer estilizado em azul" />
-          <div class="equipment-copy">
-            <h3>Notebook gamer</h3>
-            <p>Mostra que a empresa também atende quem quer potência, velocidade e visual tech.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-
-    <section class="section premium-strip reveal" id="premium">
-      <div class="premium-box">
-        <div class="premium-copy">
-          <span class="eyebrow">Padrão profissional</span>
-          <h2>Uma apresentação com cara de empresa grande.</h2>
-          <p>
-            Visual forte, navegação elegante, seções bem organizadas e foco direto em conversão.
-            Tudo pensado para passar confiança logo nos primeiros segundos.
-          </p>
-        </div>
-        <div class="premium-metrics">
-          <div class="metric-card">
-            <strong>01</strong>
-            <span>Impacto visual</span>
-          </div>
-          <div class="metric-card">
-            <strong>02</strong>
-            <span>Navegação moderna</span>
-          </div>
-          <div class="metric-card">
-            <strong>03</strong>
-            <span>Contato facilitado</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section split-section" id="diferenciais">
-      <div class="split-card reveal">
-        <span class="eyebrow">Diferenciais</span>
-        <h2>Um site impactante chama atenção. Um atendimento bom fecha o contato.</h2>
-        <p>
-          A WS Tecnologia e Informática combina visual moderno com linguagem simples,
-          destacando o que o cliente quer ver: rapidez, confiança e resultado.
-        </p>
-      </div>
-
-      <div class="check-grid reveal">
-        <div class="check-item"><span>✓</span> Atendimento direto e rápido</div>
-        <div class="check-item"><span>✓</span> Orçamento via WhatsApp</div>
-        <div class="check-item"><span>✓</span> Soluções para trabalho e gamer</div>
-        <div class="check-item"><span>✓</span> Foco em desempenho e estabilidade</div>
-        <div class="check-item"><span>✓</span> Visual profissional e marcante</div>
-        <div class="check-item"><span>✓</span> Comunicação simples e objetiva</div>
-      </div>
-    </section>
-
-    <section class="section cta-section reveal" id="contato">
-      <div class="cta-box">
-        <span class="eyebrow">Contato</span>
-        <h2>Quer deixar seu PC ou notebook melhor?</h2>
-        <p>Fale agora para pedir orçamento de manutenção, upgrade, montagem ou compra.</p>
-
-        <div class="cta-actions">
-          <a class="button" href="https://wa.me/5537991787777?text=Olá%2C%20quero%20atendimento%20da%20WS%20Tecnologia%20e%20Informática." target="_blank" rel="noopener noreferrer">Chamar no WhatsApp</a>
-          <a class="button button-outline" href="tel:+5537991787777">(37) 9 9178-7777</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <a class="whatsapp-float" href="https://wa.me/5537991787777?text=Olá%2C%20vim%20pelo%20site%20da%20WS%20Tecnologia." target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp">
-    <span>WhatsApp</span>
-  </a>
-
-  <footer class="footer">
-    <div>
-      <strong>WS Tecnologia e Informática</strong>
-      <p>Vendas, manutenção e suporte para computadores e notebooks.</p>
+<section id="servicos" class="section">
+  <h2>Serviços</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="img/pc-gamer.jpg">
+      <h3>Montagem PC Gamer</h3>
     </div>
-    <a href="#inicio">Voltar ao topo ↑</a>
-  </footer>
+    <div class="card">
+      <img src="img/notebook-trabalho.jpg">
+      <h3>Notebook Trabalho</h3>
+    </div>
+    <div class="card">
+      <img src="img/notebook-gamer.jpg">
+      <h3>Notebook Gamer</h3>
+    </div>
+  </div>
+</section>
 
-  <script src="script.js"></script>
+<section class="section">
+  <h2>Por que escolher</h2>
+  <ul>
+    <li>Atendimento rápido</li>
+    <li>Orçamento sem compromisso</li>
+    <li>Preço justo</li>
+  </ul>
+</section>
+
+<section id="contato" class="section">
+  <h2>Fale agora</h2>
+  <a class="btn big" href="https://wa.me/5537991787777">Chamar no WhatsApp</a>
+</section>
+
 </body>
 </html>
