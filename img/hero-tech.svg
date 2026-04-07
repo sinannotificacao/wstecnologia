@@ -1,0 +1,88 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1600" height="1000" fill="#050816"/>
+<g opacity="0.7">
+  <circle cx="210" cy="180" r="220" fill="url(#g1)"/>
+  <circle cx="1380" cy="220" r="260" fill="url(#g2)"/>
+  <circle cx="860" cy="820" r="320" fill="url(#g3)"/>
+</g>
+<g opacity="0.18" stroke="#73A8FF">
+  <path d="M70 120 L280 240 L210 430 L440 520 L390 760"/>
+  <path d="M1150 90 L1340 210 L1260 420 L1490 510"/>
+  <path d="M780 120 L980 180 L870 340 L1100 430 L1010 620"/>
+  <circle cx="70" cy="120" r="7" fill="#73A8FF"/>
+  <circle cx="280" cy="240" r="7" fill="#73A8FF"/>
+  <circle cx="210" cy="430" r="7" fill="#73A8FF"/>
+  <circle cx="440" cy="520" r="7" fill="#73A8FF"/>
+  <circle cx="390" cy="760" r="7" fill="#73A8FF"/>
+  <circle cx="1150" cy="90" r="7" fill="#73A8FF"/>
+  <circle cx="1340" cy="210" r="7" fill="#73A8FF"/>
+  <circle cx="1260" cy="420" r="7" fill="#73A8FF"/>
+  <circle cx="1490" cy="510" r="7" fill="#73A8FF"/>
+  <circle cx="780" cy="120" r="7" fill="#73A8FF"/>
+  <circle cx="980" cy="180" r="7" fill="#73A8FF"/>
+  <circle cx="870" cy="340" r="7" fill="#73A8FF"/>
+  <circle cx="1100" cy="430" r="7" fill="#73A8FF"/>
+  <circle cx="1010" cy="620" r="7" fill="#73A8FF"/>
+</g>
+<g>
+  <rect x="760" y="220" width="510" height="330" rx="24" fill="url(#panel)" stroke="#6AA5FF" stroke-opacity="0.25"/>
+  <rect x="790" y="250" width="450" height="255" rx="18" fill="#0B1736"/>
+  <rect x="820" y="280" width="390" height="195" rx="14" fill="url(#monitor)"/>
+  <rect x="930" y="535" width="170" height="18" rx="9" fill="#223D73"/>
+  <rect x="880" y="553" width="270" height="24" rx="12" fill="#152C58"/>
+  <rect x="1090" y="255" width="120" height="245" rx="16" fill="url(#pc)" stroke="#7BB2FF" stroke-opacity="0.35"/>
+  <circle cx="1149" cy="304" r="16" fill="#67D0FF"/>
+  <circle cx="1149" cy="360" r="16" fill="#67D0FF" fill-opacity="0.7"/>
+  <circle cx="1149" cy="416" r="16" fill="#67D0FF" fill-opacity="0.5"/>
+  <rect x="1116" y="454" width="68" height="18" rx="9" fill="#6AA5FF" fill-opacity="0.7"/>
+</g>
+<g>
+  <rect x="220" y="420" width="330" height="210" rx="20" fill="url(#lap1)" stroke="#7BB2FF" stroke-opacity="0.28"/>
+  <rect x="245" y="445" width="280" height="160" rx="14" fill="#0A1530"/>
+  <rect x="205" y="620" width="360" height="34" rx="17" fill="#203C72"/>
+  <rect x="265" y="470" width="160" height="16" rx="8" fill="#4FD2FF"/>
+  <rect x="265" y="500" width="210" height="12" rx="6" fill="#87B8FF" fill-opacity="0.85"/>
+  <rect x="265" y="528" width="180" height="12" rx="6" fill="#87B8FF" fill-opacity="0.65"/>
+  <rect x="265" y="558" width="220" height="12" rx="6" fill="#87B8FF" fill-opacity="0.48"/>
+</g>
+<g opacity="0.75">
+  <rect x="980" y="640" width="280" height="160" rx="22" fill="url(#card)" stroke="#6AA5FF" stroke-opacity="0.26"/>
+  <rect x="1010" y="675" width="150" height="14" rx="7" fill="#6BD3FF"/>
+  <rect x="1010" y="705" width="210" height="11" rx="5.5" fill="#96BBFF" fill-opacity="0.8"/>
+  <rect x="1010" y="732" width="180" height="11" rx="5.5" fill="#96BBFF" fill-opacity="0.55"/>
+</g>
+<defs>
+  <radialGradient id="g1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(210 180) rotate(90) scale(220)">
+    <stop stop-color="#2159D9"/>
+    <stop offset="1" stop-color="#2159D9" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="g2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1380 220) rotate(90) scale(260)">
+    <stop stop-color="#22B3FF"/>
+    <stop offset="1" stop-color="#22B3FF" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="g3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(860 820) rotate(90) scale(320)">
+    <stop stop-color="#1746A8"/>
+    <stop offset="1" stop-color="#1746A8" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="panel" x1="760" y1="220" x2="1270" y2="550" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#0F2048"/>
+    <stop offset="1" stop-color="#09122E"/>
+  </linearGradient>
+  <linearGradient id="monitor" x1="820" y1="280" x2="1210" y2="475" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#153A78"/>
+    <stop offset="1" stop-color="#0E1838"/>
+  </linearGradient>
+  <linearGradient id="pc" x1="1090" y1="255" x2="1210" y2="500" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#0F2E64"/>
+    <stop offset="1" stop-color="#0A1530"/>
+  </linearGradient>
+  <linearGradient id="lap1" x1="220" y1="420" x2="550" y2="630" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#0F2B60"/>
+    <stop offset="1" stop-color="#09132B"/>
+  </linearGradient>
+  <linearGradient id="card" x1="980" y1="640" x2="1260" y2="800" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#10234C"/>
+    <stop offset="1" stop-color="#091126"/>
+  </linearGradient>
+</defs>
+</svg>
