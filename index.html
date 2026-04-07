@@ -1,45 +1,228 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WS Tecnologia e Informática</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Vendas, manutenção e suporte para computadores e notebooks. Upgrade, montagem de PC gamer, limpeza técnica e atendimento rápido via WhatsApp." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="bg-grid"></div>
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
 
-<header class="hero">
-  <h1>WS Tecnologia e Informática</h1>
-  <p>Manutenção, vendas e suporte para computadores e notebooks</p>
-  <a href="https://wa.me/5537991787777" class="btn">Fale no WhatsApp</a>
-</header>
+  <header class="topbar">
+    <a href="#inicio" class="brand">
+      <img src="img/logo.jpeg" alt="WS Tecnologia e Informática" />
+    </a>
 
-<section class="services">
-  <h2>Serviços</h2>
-  <div class="grid">
-    <div class="card">Formatação e instalação</div>
-    <div class="card">Upgrade de SSD e memória</div>
-    <div class="card">Montagem de PC Gamer</div>
-    <div class="card">Limpeza e manutenção</div>
-    <div class="card">Troca de peças</div>
-    <div class="card">Reparo em notebooks</div>
+    <nav class="menu">
+      <a href="#servicos">Serviços</a>
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#tecnologia">Tecnologia</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <a class="button button-outline topbar-cta" href="https://wa.me/5537991787777?text=Olá%2C%20vim%20pelo%20site%20e%20quero%20um%20orçamento." target="_blank" rel="noopener noreferrer">
+      WhatsApp
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#servicos">Serviços</a>
+    <a href="#diferenciais">Diferenciais</a>
+    <a href="#tecnologia">Tecnologia</a>
+    <a href="#contato">Contato</a>
+    <a class="button" href="https://wa.me/5537991787777?text=Olá%2C%20vim%20pelo%20site%20e%20quero%20um%20orçamento." target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
   </div>
-</section>
 
-<section class="about">
-  <h2>Sobre</h2>
-  <p>A WS Tecnologia e Informática oferece soluções completas em manutenção, vendas e suporte técnico com qualidade e confiança.</p>
-</section>
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="hero-content reveal">
+        <span class="eyebrow">WS Tecnologia e Informática</span>
+        <h1>Seu computador pronto para render mais, durar mais e impressionar mais.</h1>
+        <p>
+          Assistência técnica, manutenção, upgrades, vendas e montagem de computadores e notebooks
+          com visual moderno, atendimento rápido e foco em desempenho.
+        </p>
 
-<section class="contact">
-  <h2>Contato</h2>
-  <p>Atendimento rápido via WhatsApp</p>
-  <a href="https://wa.me/5537991787777" class="btn">Chamar no WhatsApp</a>
-</section>
+        <div class="hero-actions">
+          <a class="button" href="https://wa.me/5537991787777?text=Olá%2C%20quero%20um%20orçamento%20para%20computador%20ou%20notebook." target="_blank" rel="noopener noreferrer">Solicitar orçamento</a>
+          <a class="button button-outline" href="#servicos">Ver serviços</a>
+        </div>
 
-<footer>
-  <p>© 2026 WS Tecnologia e Informática</p>
-</footer>
+        <div class="hero-stats">
+          <div class="stat-card">
+            <strong>Atendimento rápido</strong>
+            <span>Suporte direto no WhatsApp</span>
+          </div>
+          <div class="stat-card">
+            <strong>PC e notebook</strong>
+            <span>Manutenção, vendas e upgrades</span>
+          </div>
+          <div class="stat-card">
+            <strong>Visual gamer e tech</strong>
+            <span>Montagens e setups sob medida</span>
+          </div>
+        </div>
+      </div>
 
+      <div class="hero-visual reveal">
+        <div class="hero-panel">
+          <div class="hero-chip">Desempenho + confiabilidade</div>
+          <h2>Montagem, manutenção e upgrade com presença profissional.</h2>
+          <ul>
+            <li>Formatação e otimização do sistema</li>
+            <li>Troca de SSD, memória e peças</li>
+            <li>Limpeza interna e manutenção preventiva</li>
+            <li>Montagem de PC gamer e workstation</li>
+            <li>Suporte técnico para computadores e notebooks</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="brands section reveal" aria-label="Tecnologias atendidas">
+      <div class="brands-track">
+        <span>Windows</span>
+        <span>SSD NVMe</span>
+        <span>PC Gamer</span>
+        <span>Notebook</span>
+        <span>Formatação</span>
+        <span>Upgrade</span>
+        <span>Limpeza Técnica</span>
+        <span>Backup</span>
+        <span>Hardware</span>
+        <span>Desempenho</span>
+      </div>
+    </section>
+
+    <section class="section reveal" id="servicos">
+      <div class="section-heading">
+        <span class="eyebrow">Serviços</span>
+        <h2>Soluções para quem precisa de velocidade, estabilidade e confiança.</h2>
+        <p>Atendimento pensado para uso pessoal, home office, estudo, jogos e produtividade.</p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="service-card">
+          <div class="icon">⚡</div>
+          <h3>Formatação e instalação</h3>
+          <p>Instalação de sistema, drivers, programas essenciais e organização inicial do equipamento.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="icon">💾</div>
+          <h3>Upgrade de SSD e memória</h3>
+          <p>Mais velocidade para abrir programas, iniciar o sistema e melhorar o desempenho geral.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="icon">🧰</div>
+          <h3>Manutenção preventiva</h3>
+          <p>Limpeza interna, troca de pasta térmica, revisão e prevenção contra superaquecimento.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="icon">🎮</div>
+          <h3>Montagem de PC gamer</h3>
+          <p>Configuração equilibrada, visual impactante e orientação para melhor custo-benefício.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="icon">🔧</div>
+          <h3>Reparo em notebooks</h3>
+          <p>Diagnóstico técnico, substituição de peças e solução de falhas em notebooks.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="icon">🛒</div>
+          <h3>Vendas e consultoria</h3>
+          <p>Ajuda para escolher computador, notebook, peças e acessórios conforme sua necessidade.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split-section" id="diferenciais">
+      <div class="split-card reveal">
+        <span class="eyebrow">Diferenciais</span>
+        <h2>Um site bonito chama atenção. Um serviço bom faz o cliente voltar.</h2>
+        <p>
+          A WS Tecnologia e Informática une apresentação moderna com atendimento prático,
+          focado em resolver o problema e entregar resultado real.
+        </p>
+      </div>
+
+      <div class="check-grid reveal">
+        <div class="check-item"><span>✓</span> Atendimento direto e rápido</div>
+        <div class="check-item"><span>✓</span> Orçamento via WhatsApp</div>
+        <div class="check-item"><span>✓</span> Foco em desempenho e estabilidade</div>
+        <div class="check-item"><span>✓</span> Soluções para PC e notebook</div>
+        <div class="check-item"><span>✓</span> Visual profissional e moderno</div>
+        <div class="check-item"><span>✓</span> Serviço técnico com linguagem simples</div>
+      </div>
+    </section>
+
+    <section class="section tech-section reveal" id="tecnologia">
+      <div class="section-heading">
+        <span class="eyebrow">Tecnologia</span>
+        <h2>Estilo gamer, presença forte e comunicação clara.</h2>
+        <p>
+          O site foi pensado para passar sensação de performance, organização e confiança,
+          com visual escuro, destaques em azul e uma navegação que leva o visitante direto ao contato.
+        </p>
+      </div>
+
+      <div class="tech-panels">
+        <div class="tech-card large">
+          <h3>Para quem quer vender mais no WhatsApp</h3>
+          <p>
+            A página apresenta sua empresa com impacto e direciona o visitante rapidamente para o botão de orçamento.
+          </p>
+        </div>
+        <div class="tech-card">
+          <h3>Layout responsivo</h3>
+          <p>Funciona bem no celular, tablet e computador.</p>
+        </div>
+        <div class="tech-card">
+          <h3>Visual memorável</h3>
+          <p>Efeito premium com cara de tecnologia e desempenho.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-section reveal" id="contato">
+      <div class="cta-box">
+        <span class="eyebrow">Contato</span>
+        <h2>Precisa melhorar seu computador ou notebook?</h2>
+        <p>Fale agora e peça seu orçamento para manutenção, upgrade, montagem ou compra.</p>
+
+        <div class="cta-actions">
+          <a class="button" href="https://wa.me/5537991787777?text=Olá%2C%20quero%20atendimento%20da%20WS%20Tecnologia%20e%20Informática." target="_blank" rel="noopener noreferrer">Chamar no WhatsApp</a>
+          <a class="button button-outline" href="tel:+5537991787777">(37) 9 9178-7777</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a class="whatsapp-float" href="https://wa.me/5537991787777?text=Olá%2C%20vim%20pelo%20site%20da%20WS%20Tecnologia." target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp">
+    <span>WhatsApp</span>
+  </a>
+
+  <footer class="footer">
+    <div>
+      <strong>WS Tecnologia e Informática</strong>
+      <p>Vendas, manutenção e suporte para computadores e notebooks.</p>
+    </div>
+    <a href="#inicio">Voltar ao topo ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
