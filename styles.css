@@ -562,3 +562,33 @@ a { color: inherit; text-decoration: none; }
     align-items: flex-start;
   }
 }
+
+
+/* --- MENU PREMIUM AJUSTE --- */
+:root{
+  --header-height: 70px;
+}
+
+.topbar{
+  min-height: var(--header-height) !important;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.topbar.hide{
+  transform: translateY(-100%);
+}
+
+.topbar.scrolled{
+  background: rgba(5,15,35,0.85) !important;
+  backdrop-filter: blur(10px);
+}
+
+.brand img{
+  width: 140px !important;
+}
+
+.header-cta{
+  min-height: 44px !important;
+  padding: 0 16px !important;
+  font-size: 0.9rem !important;
+}
