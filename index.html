@@ -1,28 +1,193 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WS TEC</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WS TEC | Assistência Técnica em Computadores e Notebooks</title>
+  <meta name="description" content="Manutenção, upgrade e vendas de computadores e notebooks. Atendimento rápido via WhatsApp." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="bg-grid"></div>
+  <div class="stars"></div>
+  <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div>
+  <div class="glow glow-3"></div>
 
-<header class="topbar" id="topbar">
-  <img src="img/logo.jpeg" class="logo">
-  <nav class="menu">
-    <a href="#">Serviços</a>
-    <a href="#">Equipamentos</a>
-    <a href="#">Diferenciais</a>
-    <a href="#">Contato</a>
-  </nav>
-  <a class="btn">Falar agora</a>
-</header>
+  <header class="topbar" id="topbar">
+    <a href="#inicio" class="brand">
+      <img src="img/logo.jpeg" alt="WS TEC" />
+    </a>
 
-<section class="hero">
-  <h1>Seu computador está lento?<br><span>A gente resolve.</span></h1>
-</section>
+    <nav class="menu">
+      <a href="#servicos">Serviços</a>
+      <a href="#equipamentos">Equipamentos</a>
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#contato">Contato</a>
+    </nav>
 
-<script src="script.js"></script>
+    <a class="header-cta" href="https://wa.me/5537991787777?text=Olá%2C%20vim%20pelo%20site%20e%20quero%20um%20orçamento." target="_blank" rel="noopener noreferrer">
+      Falar agora
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#servicos">Serviços</a>
+    <a href="#equipamentos">Equipamentos</a>
+    <a href="#diferenciais">Diferenciais</a>
+    <a href="#contato">Contato</a>
+    <a class="button" href="https://wa.me/5537991787777?text=Olá%2C%20vim%20pelo%20site%20e%20quero%20um%20orçamento." target="_blank" rel="noopener noreferrer">Falar agora</a>
+  </div>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-inner reveal">
+        <h1>Seu computador está lento?<br><span>A gente resolve.</span></h1>
+
+        <div class="hero-points">
+          <div>✅ Travando direto?</div>
+          <div>✅ Demorando pra ligar?</div>
+          <div>✅ Esquentando muito?</div>
+          <div>✅ Precisando de upgrade?</div>
+        </div>
+
+        <a class="hero-cta" href="https://wa.me/5537991787777?text=Olá%2C%20preciso%20de%20ajuda%20com%20meu%20computador%20ou%20notebook." target="_blank" rel="noopener noreferrer">
+          <span class="wa-dot">🟢</span>
+          Falar agora
+        </a>
+
+        <p class="hero-note">Atendimento rápido, direto no WhatsApp.</p>
+      </div>
+    </section>
+
+    <section class="section reveal" id="servicos">
+      <div class="section-heading">
+        <span class="eyebrow">Serviços</span>
+        <h2>Assistência técnica e soluções para quem quer desempenho de verdade.</h2>
+        <p>Atendimento para trabalho, estudo, uso pessoal e gamer.</p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="card">
+          <div class="icon">⚡</div>
+          <h3>Formatação e instalação</h3>
+          <p>Sistema limpo, drivers e programas essenciais instalados do jeito certo.</p>
+        </article>
+        <article class="card">
+          <div class="icon">💾</div>
+          <h3>Upgrade de SSD e memória</h3>
+          <p>Mais velocidade para ligar, abrir programas e usar o equipamento sem travar.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🔧</div>
+          <h3>Reparo em notebooks</h3>
+          <p>Diagnóstico, troca de peças e soluções práticas para o dia a dia.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🎮</div>
+          <h3>Montagem de PC gamer</h3>
+          <p>Configuração equilibrada, visual bonito e desempenho forte.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🧰</div>
+          <h3>Manutenção preventiva</h3>
+          <p>Limpeza, revisão e prevenção contra aquecimento e queda de desempenho.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🛒</div>
+          <h3>Vendas e consultoria</h3>
+          <p>Ajuda para escolher computador, notebook e peças sem gastar errado.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal" id="equipamentos">
+      <div class="section-heading">
+        <span class="eyebrow">Equipamentos</span>
+        <h2>Para trabalho, home office e gamer.</h2>
+        <p>Imagens reais para mostrar os tipos de equipamentos que você atende.</p>
+      </div>
+
+      <div class="equipment-grid">
+        <article class="equipment-card large">
+          <img src="img/pc-gamer.jpg" alt="PC gamer" />
+          <div class="equipment-copy">
+            <h3>PC Gamer</h3>
+            <p>Montagem, upgrade, limpeza e otimização para desempenho forte.</p>
+          </div>
+        </article>
+
+        <article class="equipment-card">
+          <img src="img/notebook-trabalho.jpg" alt="Notebook para trabalho" />
+          <div class="equipment-copy">
+            <h3>Notebook para trabalho</h3>
+            <p>Mais rapidez, estabilidade e produtividade no dia a dia.</p>
+          </div>
+        </article>
+
+        <article class="equipment-card">
+          <img src="img/notebook-gamer.jpg" alt="Notebook gamer" />
+          <div class="equipment-copy">
+            <h3>Notebook gamer</h3>
+            <p>Melhorias para quem precisa de potência e visual tech.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal" id="diferenciais">
+      <div class="premium-box">
+        <div class="premium-copy">
+          <span class="eyebrow">Diferenciais</span>
+          <h2>Atendimento rápido, preço justo e serviço de confiança.</h2>
+          <p>O foco é simples: entender o problema, orientar com clareza e levar o cliente para a solução mais certa.</p>
+        </div>
+
+        <div class="metric-grid">
+          <div class="metric-card">
+            <strong>01</strong>
+            <span>Resposta rápida</span>
+          </div>
+          <div class="metric-card">
+            <strong>02</strong>
+            <span>Orçamento sem compromisso</span>
+          </div>
+          <div class="metric-card">
+            <strong>03</strong>
+            <span>Suporte para PC e notebook</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="contato">
+      <div class="cta-box">
+        <span class="eyebrow">Contato</span>
+        <h2>Quer melhorar seu computador ou notebook?</h2>
+        <p>Chame agora para pedir orçamento de manutenção, upgrade, montagem ou compra.</p>
+        <div class="cta-actions">
+          <a class="button" href="https://wa.me/5537991787777?text=Olá%2C%20quero%20atendimento%20da%20WS%20TEC." target="_blank" rel="noopener noreferrer">Falar agora</a>
+          <a class="button button-outline" href="tel:+5537991787777">(37) 9 9178-7777</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a class="whatsapp-float" href="https://wa.me/5537991787777?text=Olá%2C%20vim%20pelo%20site%20da%20WS%20TEC." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+
+  <footer class="footer">
+    <div>
+      <strong>WS TEC</strong>
+      <p>Manutenção, upgrade e vendas de computadores e notebooks.</p>
+    </div>
+    <a href="#inicio">Voltar ao topo ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

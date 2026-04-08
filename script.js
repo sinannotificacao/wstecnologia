@@ -1,15 +1,24 @@
 
-let lastScroll = 0;
-const header = document.getElementById("topbar");
+const menuToggle = document.getElementById('menuToggle');
+const mobileMenu = document.getElementById('mobileMenu');
 
-window.addEventListener("scroll", () => {
-  let currentScroll = window.pageYOffset;
+if (menuToggle && mobileMenu) {
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('open');
+  });
 
-  if (currentScroll > lastScroll && currentScroll > 80) {
-    header.classList.add("hide");
-  } else {
-    header.classList.remove("hide");
-  }
+  mobileMenu.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => mobileMenu.classList.remove('open'));
+  });
+}
 
-  lastScroll = currentScroll;
-});
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.14 });
+
+document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
