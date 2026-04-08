@@ -164,34 +164,3 @@ window.addEventListener("scroll", () => {
 
   counters.forEach((counter) => counterObserver.observe(counter));
 })();
-
-
-// MENU_ACTIVE_TRACK
-(function () {
-  const links = Array.from(document.querySelectorAll('.menu a[href^="#"]'));
-  if (!links.length) return;
-
-  const sections = links
-    .map((link) => {
-      const target = document.querySelector(link.getAttribute('href'));
-      return target ? { link, target } : null;
-    })
-    .filter(Boolean);
-
-  function updateActiveLink() {
-    const scrollPos = window.scrollY + 120;
-    let current = null;
-
-    for (const item of sections) {
-      if (item.target.offsetTop <= scrollPos) {
-        current = item;
-      }
-    }
-
-    links.forEach((link) => link.classList.remove('active'));
-    if (current) current.link.classList.add('active');
-  }
-
-  window.addEventListener('scroll', updateActiveLink, { passive: true });
-  updateActiveLink();
-})();
