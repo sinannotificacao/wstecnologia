@@ -859,3 +859,30 @@ body{
 body{
   margin: 0 !important;
 }
+
+/* ===== MELHORIAS FINAS (SEGURO) ===== */
+
+/* suavizar menu */
+.topbar{
+  transition: transform 0.25s ease, background 0.25s ease, backdrop-filter 0.25s ease;
+}
+
+/* menu mais elegante */
+.menu a{
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.menu a:hover{
+  color:#58cfff !important;
+  transform: translateY(-1px);
+}
+
+/* botão mais chamativo sem exagero */
+.header-cta{
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.header-cta:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 0 12px rgba(88,207,255,0.2);
+}
