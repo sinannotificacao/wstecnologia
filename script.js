@@ -24,48 +24,24 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 
 
-// --- MENU INTELIGENTE ---
-let lastScroll = 0;
-const header = document.getElementById("topbar");
-
+// ULTRA_THIN_SCROLL
+let wsLastScroll = 0;
+const wsHeader = document.getElementById("topbar");
 window.addEventListener("scroll", () => {
-  let current = window.pageYOffset;
+  if (!wsHeader) return;
+  const current = window.pageYOffset || 0;
 
-  if (current > lastScroll && current > 80){
-    header.classList.add("hide");
+  if (current > wsLastScroll && current > 90) {
+    wsHeader.classList.add("hide");
   } else {
-    header.classList.remove("hide");
+    wsHeader.classList.remove("hide");
   }
 
-  if(current > 50){
-    header.classList.add("scrolled");
+  if (current > 24) {
+    wsHeader.classList.add("scrolled");
   } else {
-    header.classList.remove("scrolled");
+    wsHeader.classList.remove("scrolled");
   }
 
-  lastScroll = current;
-});
-
-
-// --- MENU INTELIGENTE REFINADO ---
-let lastScrollRefined = 0;
-const refinedHeader = document.getElementById("topbar");
-
-window.addEventListener("scroll", () => {
-  if (!refinedHeader) return;
-  const current = window.pageYOffset;
-
-  if (current > lastScrollRefined && current > 120) {
-    refinedHeader.classList.add("hide");
-  } else {
-    refinedHeader.classList.remove("hide");
-  }
-
-  if (current > 40) {
-    refinedHeader.classList.add("scrolled");
-  } else {
-    refinedHeader.classList.remove("scrolled");
-  }
-
-  lastScrollRefined = current;
+  wsLastScroll = current <= 0 ? 0 : current;
 }, { passive: true });
