@@ -22,3 +22,20 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.14 });
 
 document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+
+// FINAL MENU CONTROL
+let lastScroll = 0;
+const header = document.getElementById("topbar");
+
+window.addEventListener("scroll", () => {
+  let current = window.pageYOffset;
+
+  if (current > lastScroll && current > 80){
+    header.classList.add("hide");
+  } else {
+    header.classList.remove("hide");
+  }
+
+  lastScroll = current;
+});
