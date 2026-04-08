@@ -564,117 +564,109 @@ a { color: inherit; text-decoration: none; }
 }
 
 
-/* ===== ULTRA FINO REAL ===== */
-:root{
-  --header-height: 48px !important;
+/* ===== MARCA ANIMADA SEM LOGO ===== */
+.brand,
+.brand img {
+  display: none !important;
 }
 
-body{
-  padding-top: calc(var(--header-height) + 8px) !important;
+.brand-text {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  font-weight: 900;
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+  color: #f4f8ff;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-shadow:
+    0 0 6px rgba(255,255,255,0.10),
+    0 0 12px rgba(56, 189, 248, 0.18);
+  animation: wsPulse 3.2s ease-in-out infinite;
+  flex-shrink: 0;
 }
 
-.topbar{
-  min-height: var(--header-height) !important;
-  height: var(--header-height) !important;
-  padding: 2px 10px !important;
-  border-radius: 0 0 16px 16px !important;
-  background: rgba(5, 15, 35, 0.46) !important;
-  border-color: rgba(126, 182, 255, 0.05) !important;
-  backdrop-filter: blur(6px) !important;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.16) !important;
+.brand-text span {
+  color: #58cfff;
+  text-shadow:
+    0 0 6px rgba(88, 207, 255, 0.45),
+    0 0 16px rgba(56, 189, 248, 0.28),
+    0 0 26px rgba(37, 99, 235, 0.18);
 }
 
-.topbar.scrolled{
-  background: rgba(5, 15, 35, 0.64) !important;
-  backdrop-filter: blur(8px) !important;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.20) !important;
+.brand-text::after {
+  content: "";
+  position: absolute;
+  top: -35%;
+  bottom: -35%;
+  left: -30%;
+  width: 42%;
+  transform: skewX(-18deg) translateX(-220%);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,0.04),
+    rgba(125, 226, 255, 0.40),
+    rgba(255,255,255,0.04),
+    transparent
+  );
+  filter: blur(2px);
+  pointer-events: none;
+  animation: wsShine 4.8s linear infinite;
 }
 
-.topbar::before{
-  opacity: 0.22 !important;
-}
-
-.topbar::after{
-  opacity: 0.35 !important;
-}
-
-.brand{
-  flex-shrink: 0 !important;
-}
-
-.brand img{
-  width: 88px !important;
-  max-height: 30px !important;
-  object-fit: contain !important;
-  display: block !important;
-}
-
-.menu{
-  gap: 12px !important;
-}
-
-.menu a{
-  font-size: 0.78rem !important;
-  font-weight: 500 !important;
-  line-height: 1 !important;
-  color: rgba(233,241,255,0.78) !important;
-}
-
-.header-cta{
-  min-height: 30px !important;
-  height: 30px !important;
-  min-width: 118px !important;
-  padding: 0 10px !important;
-  font-size: 0.74rem !important;
-  border-radius: 999px !important;
-  background: rgba(17, 57, 135, 0.44) !important;
-  box-shadow: 0 0 0 1px rgba(88,169,255,0.05), 0 0 10px rgba(45,123,255,0.08), inset 0 0 8px rgba(73,199,255,0.04) !important;
-}
-
-.hero{
-  min-height: calc(100vh - var(--header-height) - 8px) !important;
-  padding-top: 0 !important;
-}
-
-@media (max-width: 860px){
-  :root{
-    --header-height: 44px !important;
+@keyframes wsPulse {
+  0%, 100% {
+    text-shadow:
+      0 0 6px rgba(255,255,255,0.10),
+      0 0 12px rgba(56, 189, 248, 0.16);
   }
-
-  .topbar{
-    padding: 2px 8px !important;
-  }
-
-  .brand img{
-    width: 76px !important;
-    max-height: 26px !important;
-  }
-
-  .menu{
-    display: none !important;
-  }
-
-  .header-cta{
-    display: none !important;
-  }
-
-  .menu-toggle{
-    display: inline-flex !important;
-    padding: 6px 9px !important;
-    font-size: 0.92rem !important;
-  }
-
-  body{
-    padding-top: calc(var(--header-height) + 8px) !important;
+  50% {
+    text-shadow:
+      0 0 8px rgba(255,255,255,0.18),
+      0 0 18px rgba(56, 189, 248, 0.24),
+      0 0 28px rgba(37, 99, 235, 0.12);
   }
 }
 
-@media (max-width: 640px){
-  body{
-    padding-top: calc(var(--header-height) + 6px) !important;
+@keyframes wsShine {
+  0% {
+    transform: skewX(-18deg) translateX(-220%);
+    opacity: 0;
   }
+  8% {
+    opacity: 0.9;
+  }
+  20% {
+    opacity: 0.45;
+  }
+  32% {
+    transform: skewX(-18deg) translateX(360%);
+    opacity: 0;
+  }
+  100% {
+    transform: skewX(-18deg) translateX(360%);
+    opacity: 0;
+  }
+}
 
-  .hero{
-    min-height: calc(100vh - var(--header-height) - 6px) !important;
+.topbar {
+  padding-left: 14px !important;
+}
+
+@media (max-width: 860px) {
+  .brand-text {
+    font-size: 0.92rem;
+    letter-spacing: 0.1em;
+  }
+}
+
+@media (max-width: 640px) {
+  .brand-text {
+    font-size: 0.88rem;
+    letter-spacing: 0.08em;
   }
 }
