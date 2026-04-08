@@ -128,3 +128,39 @@ window.addEventListener("scroll", () => {
     last = current <= 0 ? 0 : current;
   }, { passive: true });
 })();
+
+
+// COUNTER ANIMATION
+(function () {
+  const counters = document.querySelectorAll('.counter');
+  if (!counters.length) return;
+
+  const runCounter = (el) => {
+    const target = Number(el.dataset.target || 0);
+    let current = 0;
+    const step = Math.max(1, Math.ceil(target / 40));
+
+    const tick = () => {
+      current += step;
+      if (current >= target) {
+        el.textContent = '+' + target;
+        return;
+      }
+      el.textContent = '+' + current;
+      requestAnimationFrame(tick);
+    };
+
+    tick();
+  };
+
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        runCounter(entry.target);
+        counterObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  counters.forEach((counter) => counterObserver.observe(counter));
+})();
