@@ -886,3 +886,83 @@ body{
   transform: translateY(-1px);
   box-shadow: 0 0 12px rgba(88,207,255,0.2);
 }
+
+/* ===== HOVER PREMIUM ===== */
+.menu a{
+  position: relative;
+  overflow: visible;
+  transition:
+    color 0.28s ease,
+    transform 0.28s ease,
+    text-shadow 0.28s ease !important;
+}
+
+.menu a::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, #58cfff, transparent);
+  box-shadow: 0 0 10px rgba(88,207,255,0.25);
+  transform: translateX(-50%);
+  transition: width 0.28s ease, opacity 0.28s ease;
+  opacity: 0;
+}
+
+.menu a:hover{
+  color: #8fe4ff !important;
+  transform: translateY(-2px);
+  text-shadow: 0 0 10px rgba(88,207,255,0.22);
+}
+
+.menu a:hover::after{
+  width: 100%;
+  opacity: 1;
+}
+
+.header-cta{
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease !important;
+}
+
+.header-cta::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -30%;
+  width: 24%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.18), transparent);
+  transform: skewX(-18deg);
+  filter: blur(4px);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.header-cta:hover{
+  transform: translateY(-2px) scale(1.01);
+  box-shadow:
+    0 0 0 1px rgba(88,207,255,0.10),
+    0 0 16px rgba(88,207,255,0.18) !important;
+}
+
+.header-cta:hover::before{
+  opacity: 1;
+  animation: headerCtaShine 0.9s ease;
+}
+
+@keyframes headerCtaShine{
+  0%{
+    left: -30%;
+  }
+  100%{
+    left: 120%;
+  }
+}
