@@ -45,3 +45,27 @@ window.addEventListener("scroll", () => {
 
   lastScroll = current;
 });
+
+
+// --- MENU INTELIGENTE REFINADO ---
+let lastScrollRefined = 0;
+const refinedHeader = document.getElementById("topbar");
+
+window.addEventListener("scroll", () => {
+  if (!refinedHeader) return;
+  const current = window.pageYOffset;
+
+  if (current > lastScrollRefined && current > 120) {
+    refinedHeader.classList.add("hide");
+  } else {
+    refinedHeader.classList.remove("hide");
+  }
+
+  if (current > 40) {
+    refinedHeader.classList.add("scrolled");
+  } else {
+    refinedHeader.classList.remove("scrolled");
+  }
+
+  lastScrollRefined = current;
+}, { passive: true });
