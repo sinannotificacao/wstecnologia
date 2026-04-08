@@ -164,3 +164,33 @@ window.addEventListener("scroll", () => {
 
   counters.forEach((counter) => counterObserver.observe(counter));
 })();
+
+
+// ===== AJUSTE SEGURO DO MENU =====
+(function () {
+  const header = document.getElementById("topbar") || document.querySelector(".topbar");
+  if (!header) return;
+
+  let lastScroll = window.pageYOffset || 0;
+
+  function onScroll() {
+    const current = window.pageYOffset || 0;
+
+    if (current > 24) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+
+    if (current > lastScroll && current > 160) {
+      header.classList.add("hide");
+    } else {
+      header.classList.remove("hide");
+    }
+
+    lastScroll = current <= 0 ? 0 : current;
+  }
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+})();
