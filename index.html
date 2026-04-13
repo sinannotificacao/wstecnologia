@@ -21,17 +21,38 @@
             justify-content: center;
             align-items: center;
             z-index: 1000;
-            opacity: 1;
-            transition: opacity 1s ease-in-out;
         }
-        .loading-screen img {
+
+        /* Efeito do logo carregando */
+        .logo-container {
+            position: relative;
             width: 200px;
-            animation: spin 2s linear infinite;
+            height: 200px;
         }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+
+        .logo-container img {
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            animation: fillLogo 3s forwards;
         }
+
+        /* Animação do preenchimento do logo (como um copo enchendo) */
+        @keyframes fillLogo {
+            0% {
+                opacity: 0;
+                transform: scale(0);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.1);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
         /* Garantir que o conteúdo principal seja visível após o loading */
         .main-content {
             display: none;
@@ -41,7 +62,9 @@
 <body>
     <!-- Tela de Carregamento -->
     <div id="loading" class="loading-screen">
-        <img src="image(36).png" alt="Logo WS Informática">
+        <div class="logo-container">
+            <img src="logo.jpeg" alt="Logo WS Informática">
+        </div>
     </div>
 
     <!-- Conteúdo Principal do Site -->
@@ -165,11 +188,11 @@
 
     <script>
         window.onload = function() {
-            // Esconde a tela de loading e mostra o conteúdo principal após 2 segundos
+            // Esconde a tela de loading e mostra o conteúdo principal após 3 segundos
             setTimeout(function() {
                 document.getElementById('loading').style.display = 'none';
                 document.querySelector('.main-content').style.display = 'block';
-            }, 2000); // Tempo de loading
+            }, 3000); // Tempo de loading
         };
     </script>
 
