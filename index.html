@@ -8,123 +8,166 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <style>
+        /* Tela de Carregamento */
+        .loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            opacity: 1;
+            transition: opacity 1s ease-in-out;
+        }
+        .loading-screen img {
+            width: 200px;
+            animation: spin 2s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
 </head>
 <body>
-    <!-- Navegação -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">WS Informática</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Início</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Serviços</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contato</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <!-- Tela de Carregamento -->
+    <div id="loading" class="loading-screen">
+        <img src="image(36).png" alt="Logo WS Informática">
+    </div>
 
-    <!-- Seção Hero -->
-    <section id="home" class="hero d-flex justify-content-center align-items-center text-light">
-        <div class="text-center">
-            <h1 class="display-4">Bem-vindo à WS Informática</h1>
-            <p class="lead">Tecnologia de ponta para o sucesso do seu negócio.</p>
-            <a href="#services" class="btn btn-primary btn-lg">Conheça nossos serviços</a>
-        </div>
-    </section>
-
-    <!-- Seção de Serviços -->
-    <section id="services" class="services bg-light py-5">
-        <div class="container text-center">
-            <h2 class="mb-5">Nossos Serviços</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="service-box">
-                        <h4>Suporte Técnico</h4>
-                        <p>Manutenção e suporte para hardware e software, garantindo o melhor desempenho para sua empresa.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-box">
-                        <h4>Consultoria em TI</h4>
-                        <p>Consultoria especializada para otimizar sua infraestrutura e estratégias tecnológicas.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-box">
-                        <h4>Segurança da Informação</h4>
-                        <p>Proteção contra ameaças digitais e cuidados com os dados da sua empresa.</p>
-                    </div>
+    <!-- Conteúdo Principal do Site -->
+    <div class="container" style="display: none;">
+        <!-- Navegação -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">WS Informática</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contato</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </nav>
 
-    <!-- Seção Sobre -->
-    <section id="about" class="about py-5">
-        <div class="container text-center">
-            <h2>Sobre nós</h2>
-            <p>Somos especialistas em transformar a tecnologia em resultados para sua empresa, com soluções rápidas e eficientes.</p>
-        </div>
-    </section>
+        <!-- Seção Hero -->
+        <section id="home" class="hero d-flex justify-content-center align-items-center text-light">
+            <div class="text-center">
+                <h1 class="display-4">Bem-vindo à WS Informática</h1>
+                <p class="lead">Tecnologia de ponta para o sucesso do seu negócio.</p>
+                <a href="#services" class="btn btn-primary btn-lg">Conheça nossos serviços</a>
+            </div>
+        </section>
 
-    <!-- Depoimentos -->
-    <section id="testimonials" class="testimonials bg-light py-5">
-        <div class="container text-center">
-            <h2 class="mb-5">O que nossos clientes dizem</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="testimonial-box">
-                        <p>"A WS Informática nos proporcionou um suporte incrível e soluções que melhoraram nosso desempenho."</p>
-                        <strong>Cliente A</strong>
+        <!-- Seção de Serviços -->
+        <section id="services" class="services bg-light py-5">
+            <div class="container text-center">
+                <h2 class="mb-5">Nossos Serviços</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="service-box">
+                            <h4>Suporte Técnico</h4>
+                            <p>Manutenção e suporte para hardware e software, garantindo o melhor desempenho para sua empresa.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="testimonial-box">
-                        <p>"Eles entendem nossas necessidades e sempre entregam as melhores soluções de tecnologia."</p>
-                        <strong>Cliente B</strong>
+                    <div class="col-md-4">
+                        <div class="service-box">
+                            <h4>Consultoria em TI</h4>
+                            <p>Consultoria especializada para otimizar sua infraestrutura e estratégias tecnológicas.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="testimonial-box">
-                        <p>"Recomendo pela agilidade e a qualidade do serviço. Sempre à frente das necessidades do nosso negócio."</p>
-                        <strong>Cliente C</strong>
+                    <div class="col-md-4">
+                        <div class="service-box">
+                            <h4>Segurança da Informação</h4>
+                            <p>Proteção contra ameaças digitais e cuidados com os dados da sua empresa.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contato -->
-    <section id="contact" class="contact bg-dark text-light py-5">
-        <div class="container text-center">
-            <h2 class="mb-4">Entre em contato</h2>
-            <form>
-                <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Seu nome" required>
+        <!-- Seção Sobre -->
+        <section id="about" class="about py-5">
+            <div class="container text-center">
+                <h2>Sobre nós</h2>
+                <p>Somos especialistas em transformar a tecnologia em resultados para sua empresa, com soluções rápidas e eficientes.</p>
+            </div>
+        </section>
+
+        <!-- Depoimentos -->
+        <section id="testimonials" class="testimonials bg-light py-5">
+            <div class="container text-center">
+                <h2 class="mb-5">O que nossos clientes dizem</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="testimonial-box">
+                            <p>"A WS Informática nos proporcionou um suporte incrível e soluções que melhoraram nosso desempenho."</p>
+                            <strong>Cliente A</strong>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial-box">
+                            <p>"Eles entendem nossas necessidades e sempre entregam as melhores soluções de tecnologia."</p>
+                            <strong>Cliente B</strong>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial-box">
+                            <p>"Recomendo pela agilidade e a qualidade do serviço. Sempre à frente das necessidades do nosso negócio."</p>
+                            <strong>Cliente C</strong>
+                        </div>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <input type="email" class="form-control" placeholder="Seu e-mail" required>
-                </div>
-                <div class="mb-3">
-                    <textarea class="form-control" rows="4" placeholder="Mensagem" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
-        </div>
-    </section>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section id="contact" class="contact bg-dark text-light py-5">
+            <div class="container text-center">
+                <h2 class="mb-4">Entre em contato</h2>
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Seu nome" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Seu e-mail" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="4" placeholder="Mensagem" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        window.onload = function() {
+            // Esconde a tela de loading e mostra o conteúdo principal após 2 segundos
+            setTimeout(function() {
+                document.getElementById('loading').style.display = 'none';
+                document.querySelector('body > div').style.display = 'block';
+            }, 2000); // Tempo de loading
+        };
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
