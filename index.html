@@ -32,6 +32,10 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+        /* Garantir que o conteúdo principal seja visível após o loading */
+        .main-content {
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -41,7 +45,7 @@
     </div>
 
     <!-- Conteúdo Principal do Site -->
-    <div class="container" style="display: none;">
+    <div class="main-content">
         <!-- Navegação -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
@@ -164,7 +168,7 @@
             // Esconde a tela de loading e mostra o conteúdo principal após 2 segundos
             setTimeout(function() {
                 document.getElementById('loading').style.display = 'none';
-                document.querySelector('body > div').style.display = 'block';
+                document.querySelector('.main-content').style.display = 'block';
             }, 2000); // Tempo de loading
         };
     </script>
