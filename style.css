@@ -1,0 +1,91 @@
+
+/* Estilos gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+/* Seção Hero */
+.hero {
+    background: #007bff;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+/* Seção de Serviços */
+.services {
+    background: #f8f9fa;
+}
+
+.service-box {
+    padding: 30px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.service-box h4 {
+    color: #007bff;
+}
+
+/* Seção Sobre */
+.about {
+    background: #0056b3;
+    color: white;
+    padding: 50px 0;
+}
+
+.about p {
+    font-size: 1.2rem;
+}
+
+/* Seção de Depoimentos */
+.testimonials {
+    background: #f8f9fa;
+}
+
+.testimonial-box {
+    padding: 30px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+/* Contato */
+.contact {
+    background: #343a40;
+    color: white;
+}
+
+.contact input, .contact textarea {
+    background: #555;
+    color: white;
+    border: none;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.contact .btn {
+    background: #007bff;
+}
+
+@media (max-width: 768px) {
+    .service-box {
+        margin-bottom: 20px;
+    }
+}
