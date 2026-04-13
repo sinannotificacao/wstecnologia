@@ -31,27 +31,27 @@ body.site-ready .loading-screen{opacity:0;visibility:hidden;pointer-events:none}
   position:absolute;inset:0;background:linear-gradient(130deg,rgba(255,255,255,.08),transparent 35%),radial-gradient(circle at 70% 25%,rgba(90,185,255,.18),transparent 30%);
   z-index:4;pointer-events:none
 }
-.data-container{
+.matrix-code{
   position:absolute;left:0;right:0;bottom:0;height:0%;
   background:linear-gradient(180deg,var(--liquid-1),var(--liquid-2));
   box-shadow:inset 0 10px 25px rgba(255,255,255,.15);animation:dataRise 3.4s ease-in-out forwards;z-index:1
 }
-.data-row{
+.matrix-row{
   position:relative;width:100%;height:22px;background-color:rgba(0,255,255,0.8);
   margin:3px 0;
-  animation:dataRowMove 1.5s ease-in-out infinite;
+  animation:matrixRowMove 1.5s ease-in-out infinite;
 }
-.data-1 { animation-delay:0s; }
-.data-2 { animation-delay:0.5s; }
-.data-3 { animation-delay:1s; }
-.data-4 { animation-delay:1.5s; }
+.matrix-1 { animation-delay:0s; }
+.matrix-2 { animation-delay:0.5s; }
+.matrix-3 { animation-delay:1s; }
+.matrix-4 { animation-delay:1.5s; }
 
 @keyframes dataRise{
   0%{height:0%}
   100%{height:100%}
 }
 
-@keyframes dataRowMove{
+@keyframes matrixRowMove{
   0%{transform:translateY(0)}
   100%{transform:translateY(-100%);}
 }
