@@ -8,41 +8,67 @@
 </head>
 <body>
     <div id="animation-canvas"></div>
-    
+
     <!-- Botão WhatsApp fixo -->
     <a href="https://wa.me/5537991787777" target="_blank" id="whatsapp-btn">WhatsApp</a>
 
-    <div class="content">
-        <h1>WS Informática e Tecnologia</h1>
-        <p>Suporte técnico, manutenção e vendas de hardware</p>
-    </div>
+    <!-- Header fixo -->
+    <header>
+        <div class="logo">WS Informática e Tecnologia</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#pc-gamer">PC Gamer</a>
+            <a href="#notebooks">Notebooks</a>
+            <a href="#home-office">Home Office</a>
+            <a href="#pc-empresa">PC Empresa</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
 
-    <!-- Seções de Serviços -->
-    <section class="services">
-        <div class="service">
-            <h2>Suporte e Manutenção</h2>
-            <ul>
-                <li>Suporte remoto e presencial</li>
-                <li>Manutenção preventiva e corretiva</li>
-                <li>Otimização de PCs e redes</li>
-            </ul>
+    <!-- Seções -->
+    <section id="home" class="section hero">
+        <h1>WS Informática e Tecnologia</h1>
+        <p>Suporte, manutenção e vendas de hardware</p>
+        <a href="https://wa.me/5537991787777" class="btn">Fale Conosco</a>
+    </section>
+
+    <section id="pc-gamer" class="section services">
+        <h2>PC Gamer</h2>
+        <div class="cards">
+            <div class="card"><h3>PC Gamer 1</h3><p>Alta performance e customização</p></div>
+            <div class="card"><h3>PC Gamer 2</h3><p>Upgrade fácil e componentes premium</p></div>
         </div>
-        <div class="service">
-            <h2>Vendas de Hardware</h2>
-            <ul>
-                <li>Computadores gamer e corporativos</li>
-                <li>Componentes (placas de vídeo, SSD, RAM)</li>
-                <li>Periféricos (teclado, mouse, headset)</li>
-            </ul>
+    </section>
+
+    <section id="notebooks" class="section services">
+        <h2>Notebooks</h2>
+        <div class="cards">
+            <div class="card"><h3>Notebook 1</h3><p>Portátil, rápido e confiável</p></div>
+            <div class="card"><h3>Notebook 2</h3><p>Desempenho para jogos e trabalho</p></div>
         </div>
-        <div class="service">
-            <h2>Consultoria Empresarial</h2>
-            <ul>
-                <li>Gestão de TI</li>
-                <li>Segurança de rede</li>
-                <li>Backup e recuperação de dados</li>
-            </ul>
+    </section>
+
+    <section id="home-office" class="section services">
+        <h2>Home Office</h2>
+        <div class="cards">
+            <div class="card"><h3>Setup 1</h3><p>Computador e acessórios para produtividade</p></div>
+            <div class="card"><h3>Setup 2</h3><p>PC compacto e eficiente</p></div>
         </div>
+    </section>
+
+    <section id="pc-empresa" class="section services">
+        <h2>PC Empresa</h2>
+        <div class="cards">
+            <div class="card"><h3>Desktop Empresarial</h3><p>Estável e seguro</p></div>
+            <div class="card"><h3>Servidor Corporativo</h3><p>Backup e rede otimizados</p></div>
+        </div>
+    </section>
+
+    <section id="contato" class="section contato">
+        <h2>Contato</h2>
+        <p>Telefone: (37) 99178-7777</p>
+        <p>E-mail: contato@wsinformatica.com.br</p>
+        <a href="https://wa.me/5537991787777" class="btn">WhatsApp</a>
     </section>
 
     <script src="script.js"></script>
