@@ -1,12 +1,12 @@
 * {margin:0; padding:0; box-sizing:border-box;}
 body, html {width:100%; font-family: Arial, sans-serif; scroll-behavior:smooth; background:#0d1b2a; color:white; overflow-x:hidden;}
-header {position:fixed; top:0; left:0; width:100%; background:rgba(0,0,0,0.7); display:flex; justify-content:space-between; align-items:center; padding:10px 50px; z-index:10;}
+header {position:fixed; top:0; left:0; width:100%; background:rgba(0,0,0,0.8); display:flex; justify-content:space-between; align-items:center; padding:10px 50px; z-index:10;}
 header .logo {font-weight:bold; font-size:1.2em; color:#00aaff;}
 header nav a {margin-left:20px; text-decoration:none; color:white; font-weight:bold;}
 header nav a:hover {color:#00aaff;}
 .section {min-height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; padding:50px; text-align:center;}
 .hero {background:rgba(13,27,42,0.85);}
-.services {background:rgba(0,0,0,0.5);}
+.services {background:rgba(0,0,0,0.5); margin-bottom:50px;}
 .cards {display:flex; gap:30px; flex-wrap:wrap; justify-content:center;}
 .card {background:rgba(0,0,0,0.7); padding:20px; border-radius:10px; min-width:200px;}
 .card h3 {color:#00aaff; margin-bottom:10px;}

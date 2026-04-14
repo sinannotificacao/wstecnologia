@@ -19,10 +19,8 @@ function draw(duration=5000){
     function step(){
         const elapsed = Date.now()-start;
         if(elapsed>duration) return;
-
         ctx.fillStyle='rgba(13,27,42,0.15)';
         ctx.fillRect(0,0,canvas.width,canvas.height);
-
         ctx.fillStyle='#ffffff';
         for(let i=0;i<drops.length;i++){
             const text = chars.charAt(Math.floor(Math.random()*chars.length));
@@ -35,6 +33,7 @@ function draw(duration=5000){
     step();
 }
 
+// Chuva Matrix curta: início e depois 30s
 draw(5000);
 setTimeout(()=>{initDrops(); draw(5000);},30000);
 
